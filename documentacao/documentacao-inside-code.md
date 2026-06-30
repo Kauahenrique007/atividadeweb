@@ -80,11 +80,11 @@ O arquivo `README.md` explica o objetivo do projeto, tecnologias utilizadas, for
 
 Espaço para inserir print da Página Inicial:
 
-[INSERIR PRINT DA PÁGINA INICIAL]
+![Print da Página Inicial](capturas/pagina-inicial.png)
 
 Espaço para inserir print da Página Sobre:
 
-[INSERIR PRINT DA PÁGINA SOBRE]
+![Print da Página Sobre](capturas/pagina-sobre.png)
 
 Espaço para inserir print da Página Fale Conosco:
 

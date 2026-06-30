@@ -70,7 +70,7 @@ inside-code/
 
 ## Documentacao academica
 
-A pasta `documentacao/` contem o PDF final da atividade, o arquivo editavel em Markdown e os prints da pagina Fale Conosco, do formulario funcionando e dos dados salvos no JSON Server.
+A pasta `documentacao/` contem o PDF final da atividade, o arquivo editavel em Markdown e os prints da Pagina Inicial, Pagina Sobre, pagina Fale Conosco, formulario funcionando e dados salvos no JSON Server.
 
 ## Autor
 
