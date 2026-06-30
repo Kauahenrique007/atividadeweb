@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a Inside Code usando um formulário validado com JavaScript.">
+  <title>Inside Code | Fale Conosco</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container topo">
+      <a class="logo" href="index.html" title="Página inicial da Inside Code">
+        <span class="logo-simbolo">&lt;IC/&gt;</span>
+        <span class="logo-nome">Inside Code</span>
+      </a>
+
+      <nav class="menu" aria-label="Menu principal">
+        <button id="botao-menu" class="botao-menu" type="button" title="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul id="lista-menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a class="ativo" href="contato.html">Fale Conosco</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="topo-pagina" aria-labelledby="titulo-contato">
+      <div class="container">
+        <span class="tag">Atendimento</span>
+        <h1 id="titulo-contato">Fale Conosco</h1>
+        <p>Preencha o formulário para solicitar informações, orçamento ou orientação sobre soluções digitais.</p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-formulario">
+      <div class="container contato-grid">
+        <article class="formulario-box">
+          <span class="tag">Formulário</span>
+          <h2 id="titulo-formulario">Envie sua mensagem</h2>
+
+          <form id="form-contato" novalidate>
+            <fieldset>
+              <legend>Dados pessoais</legend>
+
+              <div class="campo">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Digite seu nome" minlength="3" maxlength="80" required title="Informe seu nome">
+                <span class="erro" id="erro-nome"></span>
+              </div>
+
+              <div class="campo">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" placeholder="exemplo@email.com" maxlength="100" required title="Informe um e-mail válido">
+                <span class="erro" id="erro-email"></span>
+              </div>
+
+              <div class="campo">
+                <label for="telefone">Telefone</label>
+                <input id="telefone" name="telefone" type="tel" placeholder="(81) 99999-0000" minlength="10" maxlength="15" required title="Informe seu telefone">
+                <span class="erro" id="erro-telefone"></span>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Solicitação</legend>
+
+              <div class="campo">
+                <label for="assunto">Assunto</label>
+                <input id="assunto" name="assunto" type="text" placeholder="Exemplo: orçamento para site" maxlength="90" required title="Informe o assunto">
+                <span class="erro" id="erro-assunto"></span>
+              </div>
+
+              <div class="campo">
+                <label for="tipoServico">Tipo de serviço desejado</label>
+                <select id="tipoServico" name="tipoServico" required title="Escolha o tipo de serviço">
+                  <option value="">Selecione uma opção</option>
+                  <option value="Desenvolvimento de Sites">Desenvolvimento de Sites</option>
+                  <option value="Sistemas Web">Sistemas Web</option>
+                  <option value="Automação de Processos">Automação de Processos</option>
+                  <option value="Consultoria em Tecnologia">Consultoria em Tecnologia</option>
+                </select>
+                <span class="erro" id="erro-tipoServico"></span>
+              </div>
+
+              <div class="campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" minlength="10" maxlength="500" required title="Digite sua mensagem"></textarea>
+                <span class="erro" id="erro-mensagem"></span>
+              </div>
+            </fieldset>
+
+            <button class="botao" type="submit">Enviar mensagem</button>
+            <p id="mensagem-status" class="mensagem-status"></p>
+          </form>
+        </article>
+
+        <aside class="caixa contato-lateral">
+          <h2>Canais da Inside Code</h2>
+          <p><strong>E-mail:</strong> contato@insidecode.local</p>
+          <p><strong>Telefone:</strong> (81) 99999-0000</p>
+          <p><strong>Endereço:</strong> Rua da Tecnologia, 100<br>Recife - PE</p>
+          <hr>
+          <p>Os dados do formulário são salvos no recurso <em>contatos</em> do JSON Server.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <section>
+        <h2>Inside Code</h2>
+        <p>Código inteligente para um futuro mais forte.</p>
+      </section>
+
+      <section>
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Fale Conosco</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>Contato</h4>
+        <p><span>E-mail:</span> contato@insidecode.local<br><span>Telefone:</span> (81) 99999-0000</p>
+      </section>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
